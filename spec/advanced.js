@@ -106,7 +106,11 @@
         var names = ['moe', 'larry', 'curly'];
         var ages = [30, 40, 50];
         var leaders = [true];
-
+        console.log(_.zip(names, ages, leaders), [
+          ['moe', 30, true],
+          ['larry', 40, undefined],
+          ['curly', 50, undefined]
+        ])
         expect(_.zip(names, ages, leaders)).to.eql([
           ['moe', 30, true],
           ['larry', 40, undefined],
